@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <a href="index.html" class="back-btn">
+                    <span class="material-icons">arrow_back</span>
+                </a>
+                <h1>Profile</h1>
+            </div>
+        </header>
+
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="avatar">
+                    <span class="material-icons">person</span>
+                </div>
+                <h2 id="userName">Loading...</h2>
+                <p id="userEmail">Loading...</p>
+            </div>
+
+            <div id="profileCompletion" class="profile-completion">
+                <div class="completion-icon">
+                    <span class="material-icons">warning</span>
+                </div>
+                <div class="completion-text">
+                    <h4>Complete Your Profile</h4>
+                    <p>Please fill out the personal questions below to complete your profile.</p>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h3>About Me</h3>
+                <p id="userDescription">Loading...</p>
+            </div>
+
+            <div class="profile-section">
+                <h3>Account Details</h3>
+                <div class="detail-item">
+                    <span class="label">Member Since</span>
+                    <span id="createdAt">Loading...</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Last Login</span>
+                    <span id="lastLogin">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-container personal-questions">
+            <h2>Complete Your Profile</h2>
+            <p class="section-description">Help us understand you better by answering these questions.</p>
+
+            <form id="personalQuestionsForm" class="questions-form">
+                <div class="question-group">
+                    <label>How do you typically behave in a group setting?</label>
+                    <textarea 
+                        name="groupBehavior" 
+                        placeholder="Are you more of a leader, a follower, or do you prefer to observe?"
+                    ></textarea>
+                </div>
+
+                <div class="question-group">
+                    <label>Describe a time when you had a disagreement</label>
+                    <textarea 
+                        name="disagreementHandling" 
+                        placeholder="How did you handle the situation?"
+                    ></textarea>
+                </div>
+
+                <div class="question-group">
+                    <label>How do you manage stress or pressure?</label>
+                    <textarea 
+                        name="stressManagement" 
+                        placeholder="What techniques do you find most effective?"
+                    ></textarea>
+                </div>
+
+                <div class="question-group">
+                    <label>What's your favorite hobby or activity?</label>
+                    <textarea 
+                        name="favoriteHobby" 
+                        placeholder="Tell us about your free time activities"
+                    ></textarea>
+                </div>
+
+                <div class="question-group">
+                    <label>What's your favorite season of the year?</label>
+                    <textarea 
+                        name="favoriteSeason" 
+                        placeholder="What do you enjoy most about it?"
+                    ></textarea>
+                </div>
+
+                <div class="question-group">
+                    <label>What is your favorite color?</label>
+                    <textarea 
+                        name="favoriteColor" 
+                        placeholder="Why do you like it?"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="save-btn">
+                    <span class="material-icons">save</span>
+                    Save Answers
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/profile.js"></script>
+</body>
+</html> 

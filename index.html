@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot Interface</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chat.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1><span class="material-icons">chat</span> Chat with Yourself</h1>
+                <div class="menu-container">
+                    <button class="menu-btn" onclick="toggleMenu()">
+                        <span class="material-icons">menu</span>
+                        <span class="profile-badge" id="profileBadge">!</span>
+                    </button>
+                    <div class="menu-dropdown" id="menuDropdown">
+                        <a href="profile.html" class="menu-item">
+                            <span class="material-icons">person</span>
+                            Profile
+                            <span class="menu-badge">Complete your profile</span>
+                        </a>
+                        <button class="menu-item" onclick="logout()">
+                            <span class="material-icons">logout</span>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be inserted here -->
+            </div>
+            <div class="input-container">
+                <div class="message-input-wrapper">
+                    <span class="material-icons">chat_bubble_outline</span>
+                    <input type="text" id="messageInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                </div>
+                <button id="sendButton" class="btn-primary ripple" onclick="sendMessage()">
+                    <span class="material-icons">send</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/chat.js"></script>
+</body>
+</html>
+

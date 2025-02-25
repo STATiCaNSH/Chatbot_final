@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Onboarding</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/onboarding.css">
+</head>
+<body>
+    <div class="onboarding-container">
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="Images/image 2.png" alt="Welcome">
+                    <h2>Welcome to ChatBot</h2>
+                    <p>Your personal AI companion for meaningful conversations</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/image 3.png" alt="Features">
+                    <h2>Smart Conversations</h2>
+                    <p>Experience natural conversations with advanced AI technology</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/image 4.png" alt="Get Started">
+                    <h2>Get Started</h2>
+                    <p>Ready to start your journey with AI?</p>
+                </div>
+            </div>
+            
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+            <button class="btn-primary ripple" onclick="proceedToChat()">
+                <span>Continue</span>
+                <span class="material-icons">arrow_forward</span>
+            </button>
+        </div>
+    </div>
+    <script src="scripts/onboarding.js"></script>
+</body>
+</html> 
